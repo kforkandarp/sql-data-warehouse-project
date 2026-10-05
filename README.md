@@ -22,7 +22,7 @@
 | Architecture | Bronze → Silver → Gold |
 | Modeling | Star Schema |
 | Loading | `BULK INSERT` + Stored Procedures |
-| Data Quality | 11 checks across Silver & Gold |
+| Data Quality | 14 checks across Silver & Gold |
 | IDE | SQL Server Management Studio (SSMS) |
 
 ## 🏗️ Architecture
@@ -101,7 +101,7 @@ Both `bronze.load_bronze` and `silver.load_silver` use `TRY/CATCH` blocks to:
 
 ## 🔍 Data Quality
 
-**11 automated checks** across Silver and Gold.
+**14 automated checks** across Silver and Gold.
 
 > Every check should return **zero rows** when the data is valid.
 > Any returned row is a failure signal.
