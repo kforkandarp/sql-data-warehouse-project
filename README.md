@@ -12,17 +12,19 @@
 - 🧹 **Data quality & validation checks**
 - 🛡️ **TRY/CATCH error handling**
 
+---
+
 ## 📌 At a Glance
 
 | | |
 |---|---|
-| 🗄️ Database | Microsoft SQL Server |
-| 💻 Language | T-SQL |
-| 🏗️ Architecture | Bronze → Silver → Gold |
-| 📊 Modeling | Star Schema |
-| 🔄 Loading | `BULK INSERT` + Stored Procedures |
-| 🧪 Data Quality | 11 checks across Silver & Gold |
-| 🛠️ IDE | SQL Server Management Studio (SSMS) |
+| Database | Microsoft SQL Server |
+| Language | T-SQL |
+| Architecture | Bronze → Silver → Gold |
+| Modeling | Star Schema |
+| Loading | `BULK INSERT` + Stored Procedures |
+| Data Quality | 11 checks across Silver & Gold |
+| IDE | SQL Server Management Studio (SSMS) |
 
 ## 🏗️ Architecture
 
@@ -148,3 +150,5 @@ docs/              Data catalog describing every column across all layers
 ```sql
 EXEC bronze.load_bronze;
 EXEC silver.load_silver;
+```
+Gold views then compute live when queried.
